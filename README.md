@@ -1,6 +1,6 @@
 # pwts-base-setup
 
-This is a base setup for Playwright with TypeScript prepared by [<pwts.dev>](https://pwts.dev/). 
+This is a base setup for Playwright with TypeScript prepared by [<pwts.dev>](https://pwts.dev/).
 
 It includes all necessary configurations and dependencies to get started with automated testing using Playwright and TypeScript.
 
@@ -16,8 +16,8 @@ Before you start, make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/pwtsdev/pwts-base-setup.git
+   cd pwts-base-setup
    ```
 
 2. Install dependencies:
