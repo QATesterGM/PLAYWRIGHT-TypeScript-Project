@@ -16,8 +16,8 @@ Before you start, make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/pwtsdev/pwts-base-setup.git
-   cd pwts-base-setup
+   git clone https://github.com/pwtsdev/base-setup.git
+   cd base-setup
    ```
 
 2. Install dependencies:
@@ -30,18 +30,18 @@ Before you start, make sure you have the following installed:
 
 The project includes the following dependencies:
 
-- `@eslint/js`: ^9.17.0
-- `@faker-js/faker`: ^9.3.0
-- `@playwright/test`: ^1.49.1
-- `@types/node`: ^22.10.2
-- `eslint`: ^9.17.0
-- `eslint-config-prettier`: ^9.1.0
-- `eslint-plugin-playwright`: ^2.1.0
-- `prettier`: ^3.4.2
-- `typescript`: ^5.7.2
-- `typescript-eslint`: ^8.18.0
-- `dotenv`: ^16.4.7
-- `tslog`: ^4.9.3
+- `@eslint/js`
+- `@faker-js/faker`
+- `@playwright/test`
+- `@types/node`
+- `eslint`
+- `eslint-config-prettier`
+- `eslint-plugin-playwright`
+- `prettier`
+- `typescript`
+- `typescript-eslint`
+- `dotenv`
+- `tslog`
 
 ## Scripts
 
