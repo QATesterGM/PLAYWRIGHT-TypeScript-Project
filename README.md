@@ -1,8 +1,8 @@
 # pwts-base-setup
 
-This is a base setup for Playwright with TypeScript prepared by [<pwts.dev>](https://pwts.dev/).
+This is a base setup for Playwright with TypeScript, proudly presented by the [<pwts.dev>](https://pwts.dev/) team, designed to help you kickstart your end-to-end testing journey with best practices and ease of use. With this setup, you'll have a solid foundation to create fast, reliable, and maintainable automated tests, empowering you to deliver high-quality software efficiently.
 
-It includes all necessary configurations and dependencies to get started with automated testing using Playwright and TypeScript.
+It includes all necessary configurations and dependencies to get started with automated testing using Playwright and TypeScript, ensuring a seamless setup process and enabling you to focus on writing efficient and robust test cases right from the start.
 
 ## Prerequisites
 
