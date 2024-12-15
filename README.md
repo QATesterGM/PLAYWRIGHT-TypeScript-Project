@@ -8,7 +8,7 @@ It includes all necessary configurations and dependencies to get started with au
 
 Before you start, make sure you have the following installed:
 
-- [Node.js](https://nodejs.org) (v16 or later)
+- [Node.js](https://nodejs.org) (v20 or later)
 - [npm](https://www.npmjs.com/)
 
 ## Setup
