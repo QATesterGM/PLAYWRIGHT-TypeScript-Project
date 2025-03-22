@@ -4,7 +4,7 @@ test('has title', async ({ page }) => {
   // Arrange
   const url = 'https://pwts.dev/';
 
-  // Act
+  // Actcc
   await page.goto(url);
 
   // Assert
