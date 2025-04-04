@@ -8,18 +8,8 @@ test('should create a new project', { tag: '@project' }, async ({ page }) => {
   // Act
   await homePage.open();
   await homePage.leftPanel.openProjectsMenu();
-
-  const addProjectForm = page.getByTestId('modal-overlay').locator('form');
-  await expect(addProjectForm).toBeVisible();
-
-  await addProjectForm.locator('input[name="name"]').fill('Test project');
-  const colorPicker = addProjectForm.locator('div[role=combobox]');
-  await colorPicker.click();
-  const projectColorSelector = page.locator('.form_field div[role=dialog]');
-  await expect(projectColorSelector).toBeVisible();
-  await projectColorSelector.getByText('Intensywny czerwony').click();
-  await addProjectForm.getByRole('button', { name: 'Dodaj' }).click();
+  await homePage.leftPanel.addProjectModal.addNewProject('Nowy Test Projekt', 'Intensywny czerwony');
 
   const projectList = page.locator('#projects_list');
-  await expect(projectList.locator('li').first()).toHaveText('Test project');
+  await expect(projectList.locator('li').first()).toHaveText('Nowy Test Projekt');
 });

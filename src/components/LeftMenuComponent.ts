@@ -1,7 +1,16 @@
-import { Locator } from '@playwright/test';
+import { Locator, Page } from '@playwright/test';
+import { AddProjectModal } from '../modals/AddProjectModal';
 import { BaseComponent } from './BaseComponent';
 
 export class LeftMenuComponent extends BaseComponent {
+  // Components
+  readonly addProjectModal: AddProjectModal;
+
+  constructor(protected page: Page) {
+    super(page);
+    this.addProjectModal = new AddProjectModal(page);
+  }
+
   // Locators
   private readonly leftMenuLocator = (): Locator => this.page.getByTestId('app-sidebar-container');
 
