@@ -1,10 +1,7 @@
-import { expect, test } from '@playwright/test';
-import { HomePage } from '../../src/pages/HomePage';
+import { expect, test } from "../../src/fixtures/po.fixture";
 
-test('should create a new project', { tag: '@project' }, async ({ page }) => {
-  // Arrange
-  const homePage = new HomePage(page);
 
+test('should create a new project', { tag: '@project' }, async ({ homePage }) => {
   // Act
   await homePage.open();
   await homePage.leftPanel.addNewProject('Nowy Test Projek3', 'Intensywny czerwony');
