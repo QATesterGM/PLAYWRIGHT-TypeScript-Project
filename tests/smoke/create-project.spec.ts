@@ -7,9 +7,8 @@ test('should create a new project', { tag: '@project' }, async ({ page }) => {
 
   // Act
   await homePage.open();
-  await homePage.leftPanel.openProjectsMenu();
-  await homePage.leftPanel.addProjectModal.addNewProject('Nowy Test Projekt', 'Intensywny czerwony');
+  await homePage.leftPanel.addNewProject('Nowy Test Projek3', 'Intensywny czerwony');
 
-  const projectList = page.locator('#projects_list');
-  await expect(projectList.locator('li').first()).toHaveText('Nowy Test Projekt');
+  // Assert
+  await expect(homePage.leftPanel.getProjectByName('Nowy Test Projek3')).toBeVisible();
 });
