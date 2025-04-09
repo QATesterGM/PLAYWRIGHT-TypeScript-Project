@@ -1,14 +1,18 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { AddProjectModal } from '../modals/AddProjectModal';
+import { BuyPremiumModal } from '../modals/BuyPremiumModal';
+import { CreateProjectModel } from '../models/create-project-model';
 import { BaseComponent } from './BaseComponent';
 
 export class LeftMenuComponent extends BaseComponent {
   // Components
   readonly addProjectModal: AddProjectModal;
+  readonly buyPremiumModal: BuyPremiumModal;
 
   constructor(protected page: Page) {
     super(page);
     this.addProjectModal = new AddProjectModal(page);
+    this.buyPremiumModal = new BuyPremiumModal(page);
   }
 
   // Locators
@@ -21,10 +25,10 @@ export class LeftMenuComponent extends BaseComponent {
     await this.page.getByLabel('Dodaj projekt').click();
   }
 
-  async addNewProject(name: string, color: string): Promise<void> {
+  async addNewProject(project: CreateProjectModel): Promise<void> {
     await this.openProjectsMenu();
     await expect(this.addProjectModal.addProjectForm()).toBeVisible();
-    await this.addProjectModal.addNewProject(name, color);
+    await this.addProjectModal.addNewProject(project.name, project.color);
   }
 
   async getAllProjectNames(): Promise<string[]> {
